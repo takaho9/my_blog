@@ -58,10 +58,15 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
         run: |
+          echo "Checking theme directory..."
+          ls -la themes/hugo-theme-stack
+          echo "Building Hugo site..."
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --theme hugo-theme-stack \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --debug
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
