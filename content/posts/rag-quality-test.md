@@ -1,14 +1,17 @@
-+++
-title = "RAGで回答の質が高くなるのか試してみた"
-date = "2025-02-19"
-categories = [
-
+---
+title: "RAGで回答の質が高くなるのか試してみた"
+date: "2025-02-19"
+categories: [
+  "生成AI",
 ]
-tags = [
+tags: [
   "生成AI",
   "Ruby"
 ]
-+++
+cover:
+  image: img/rag.jpg
+  alt: "cover image"
+---
 
 ChatGPTのProjects機能（RAG: Retrieval-Augmented Generation）を使って、回答の質が向上するのかを実験してみました。具体的には、Ruby 3.4.1の組み込みライブラリのドキュメントを使って、同じLLMモデルに同じ質問をした際の回答の質を比較しました。
 

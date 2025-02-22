@@ -13,9 +13,6 @@ Thumbs.db
 # Hugo Module キャッシュ
 hugo_cache/
 
-# サブモジュールを使っている場合（必要に応じて）
-themes/hugo-theme-stack/
-
 # IDE & エディタ関連
 .idea/
 .vscode/
