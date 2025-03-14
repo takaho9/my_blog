@@ -73,7 +73,7 @@ TEXT
   # 記事のテンプレートを作成
   article_template = <<TEXT
 ---
-title: "#{full_file_name}"
+title: "#{file_name}"
 date: #{Time.now.strftime('%Y-%m-%d')}
 draft: true
 categories:
